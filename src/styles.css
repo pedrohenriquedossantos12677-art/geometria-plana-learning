@@ -1,0 +1,498 @@
+export const modules = [
+  {
+    id: 'intro',
+    category: 'Fundamentos',
+    title: 'Introdução à Geometria Plana',
+    description: 'Entenda o campo de estudo da geometria, os elementos básicos do plano e a linguagem fundamental das figuras.',
+    objective: 'Compreender o plano, ponto, reta, ângulo e como esses elementos formam figuras planas.',
+    sections: [
+      {
+        title: 'O que é geometria plana?',
+        content: 'A geometria plana estuda figuras que podem ser desenhadas em um plano, ou seja, em uma superfície bidimensional. Nela, trabalhamos com formas como triângulos, quadriláteros, círculos, retângulos e polígonos.'
+      },
+      {
+        title: 'Elementos básicos',
+        content: 'Ponto representa uma posição no plano. Reta é uma linha infinita em uma única direção. Segmento de reta é a parte da reta entre dois pontos. Ângulo é a abertura formada por duas semirretas com a mesma origem.'
+      },
+      {
+        title: 'Importância na vida real',
+        content: 'A geometria plana está presente em arquitetura, engenharia, design, mapas, construção civil, arte e em grande parte das provas escolares e de concursos.'
+      }
+    ],
+    formulas: [
+      { label: 'Soma dos ângulos internos de um triângulo', expression: '180°' },
+      { label: 'Ângulo reto', expression: '90°' },
+      { label: 'Reta', expression: 'Infinitude de pontos em uma direção' }
+    ],
+    examples: [
+      {
+        title: 'Exemplo 1',
+        solution: 'Se um triângulo tem dois ângulos de 50° e 70°, o terceiro mede 60°, porque 180° - 50° - 70° = 60°.'
+      },
+      {
+        title: 'Exemplo 2',
+        solution: 'Uma esquina de um quarto é um exemplo de ângulo reto: 90°. Isso aparece em retângulos, paredes e janelas.'
+      }
+    ],
+    tips: [
+      'Desenhe sempre o problema para visualizar formas e medidas.',
+      'Se a questão fala em ângulos, pense em 180° para triângulos e 360° para quadriláteros.',
+      'Identifique o que é dado e o que a pergunta pede antes de aplicar fórmulas.'
+    ],
+    videoId: '4M4rjNDz0cQ',
+    questions: [
+      {
+        ask: 'Qual é a soma dos ângulos internos de qualquer triângulo?',
+        options: ['90°', '180°', '270°', '360°'],
+        correct: 1,
+        explanation: 'A soma dos ângulos internos de qualquer triângulo sempre vale 180°.'
+      },
+      {
+        ask: 'Uma figura que pode ser representada em um plano bidimensional é chamada de:',
+        options: ['Figura espacial', 'Figura plana', 'Poliedro', 'Volume'],
+        correct: 1,
+        explanation: 'A geometria plana estuda figuras que não têm profundidade, ou seja, figuras bidimensionais.'
+      },
+      {
+        ask: 'Qual dos itens abaixo é um exemplo de ângulo reto?',
+        options: ['45°', '90°', '120°', '180°'],
+        correct: 1,
+        explanation: 'Um ângulo reto mede 90° e aparece em esquinas de retângulos e quadrados.'
+      }
+    ]
+  },
+  {
+    id: 'poligonos',
+    category: 'Polígonos',
+    title: 'Polígonos e seus elementos',
+    description: 'Explore a classificação de polígonos, lados, vértices, diagonais e ângulos internos.',
+    objective: 'Identificar e classificar polígonos e compreender suas características principais.',
+    sections: [
+      {
+        title: 'Definição de polígono',
+        content: 'Polígono é uma figura plana formada por segmentos de reta que se encontram apenas em suas extremidades, sem cruzamento.'
+      },
+      {
+        title: 'Classificação',
+        content: 'Polígonos podem ser classificados pelo número de lados: triângulo (3), quadrilátero (4), pentágono (5), hexágono (6), etc. Podem ser regulares ou irregulares.'
+      },
+      {
+        title: 'Vértices e diagonais',
+        content: 'Vértices são os pontos de encontro dos lados. Diagonais são segmentos que unem dois vértices não consecutivos. O número de diagonais de um polígono é dado por d = n(n - 3) / 2.'
+      }
+    ],
+    formulas: [
+      { label: 'Número de diagonais', expression: 'd = n(n - 3)/2' },
+      { label: 'Soma dos ângulos internos', expression: 'S = (n - 2)·180°' }
+    ],
+    examples: [
+      {
+        title: 'Hexágono',
+        solution: 'Um hexágono tem 6 lados. Sua soma dos ângulos internos é (6 - 2)·180° = 720°.'
+      },
+      {
+        title: 'Diagonal de pentágono',
+        solution: 'Um pentágono tem 5 lados, então d = 5(5 - 3)/2 = 5 diagonais.'
+      }
+    ],
+    tips: [
+      'Para saber a soma dos ângulos internos, use (n - 2) · 180°.',
+      'Se uma questão pedir diagonais, lembre-se que o polígono precisa ter no mínimo 4 lados.',
+      'Lados e vértices devem sempre ser contados com atenção para não perder detalhes.'
+    ],
+    videoId: 'sZro0OQWe4Q',
+    questions: [
+      {
+        ask: 'Qual é o nome de um polígono com 8 lados?',
+        options: ['Heptágono', 'Octógono', 'Decágono', 'Pentágono'],
+        correct: 1,
+        explanation: 'Um polígono com 8 lados é chamado de octógono.'
+      },
+      {
+        ask: 'A soma dos ângulos internos de um quadrilátero é:',
+        options: ['180°', '360°', '540°', '720°'],
+        correct: 1,
+        explanation: 'Para n = 4, temos S = (4 - 2)·180° = 360°.'
+      },
+      {
+        ask: 'Qual fórmula determina o número de diagonais de um polígono de n lados?',
+        options: ['n(n - 2)/2', 'n(n - 3)/2', 'n²/2', '2n'],
+        correct: 1,
+        explanation: 'A fórmula correta é d = n(n - 3)/2.'
+      }
+    ]
+  },
+  {
+    id: 'perimetro',
+    category: 'Medidas',
+    title: 'Perímetro',
+    description: 'Aprenda a medir o contorno de figuras planas e aplicar esse conhecimento em calculos práticos.',
+    objective: 'Calcular perímetros de polígonos e perceber que o contorno é a soma dos lados.',
+    sections: [
+      {
+        title: 'Definição',
+        content: 'O perímetro é a medida do contorno de uma figura plana. Em polígonos, ele é a soma de todos os lados.'
+      },
+      {
+        title: 'Aplicações',
+        content: 'Perímetro é usado para cercar terrenos, calcular bordas de pisos, molduras, bordados e muros.'
+      },
+      {
+        title: 'Cuidado com unidades',
+        content: 'Se os lados estão em centímetros, o perímetro também estará em centímetros; se em metros, em metros. Se a pergunta misturar unidades, converta antes.'
+      }
+    ],
+    formulas: [
+      { label: 'Perímetro do retângulo', expression: 'P = 2(a + b)' },
+      { label: 'Perímetro do quadrado', expression: 'P = 4l' },
+      { label: 'Perímetro do triângulo', expression: 'P = a + b + c' }
+    ],
+    examples: [
+      {
+        title: 'Exemplo do retângulo',
+        solution: 'Um retângulo com lados 5 cm e 8 cm tem perímetro 2(5 + 8) = 26 cm.'
+      },
+      {
+        title: 'Exemplo do triângulo',
+        solution: 'Um triângulo com lados 3 cm, 4 cm e 5 cm tem perímetro 12 cm.'
+      }
+    ],
+    tips: [
+      'Não use a fórmula da área quando o problema pede perímetro.',
+      'Leia a unidade de cada lado antes de somar.',
+      'Se a figura é regular, multiplique o lado pela quantidade de lados.'
+    ],
+    videoId: 'k0-8MZb0iU0',
+    questions: [
+      {
+        ask: 'Qual é o perímetro de um quadrado de lado 7 cm?',
+        options: ['14 cm', '21 cm', '28 cm', '49 cm'],
+        correct: 2,
+        explanation: 'O perímetro do quadrado é 4 × 7 = 28 cm.'
+      },
+      {
+        ask: 'Um retângulo mede 6 m por 3 m. Seu perímetro é:',
+        options: ['9 m', '18 m', '20 m', '36 m'],
+        correct: 2,
+        explanation: 'P = 2(6 + 3) = 18 m.'
+      },
+      {
+        ask: 'Qual expressão representa o perímetro de um triângulo com lados a, b e c?',
+        options: ['a·b·c', 'a + b + c', '2(a + b)', 'ab + c'],
+        correct: 1,
+        explanation: 'Perímetro é a soma de todos os lados: a + b + c.'
+      }
+    ]
+  },
+  {
+    id: 'area',
+    category: 'Área',
+    title: 'Área de figuras planas',
+    description: 'Descubra como medir a superfície ocupada por uma figura e aplicar fórmulas em quadrados, retângulos, triângulos e outros polígonos.',
+    objective: 'Calcular áreas e identificar quando usar cada fórmula.',
+    sections: [
+      {
+        title: 'Definição de área',
+        content: 'Área é a medida da superfície interna de uma figura plana, ou seja, o espaço ocupado pela região delimitada.'
+      },
+      {
+        title: 'Unidades',
+        content: 'A unidade de área mais comum é o metro quadrado (m²), mas também usamos cm², km² e outras medidas. Em cálculo de área, sempre multiplicamos duas medidas lineares.'
+      },
+      {
+        title: 'Fórmulas essenciais',
+        content: 'Áreas de figuras planas variam de acordo com a forma: retângulo base × altura; quadrado lado²; triângulo base × altura / 2; paralelogramo base × altura.'
+      }
+    ],
+    formulas: [
+      { label: 'Área do retângulo', expression: 'A = b · h' },
+      { label: 'Área do quadrado', expression: 'A = l²' },
+      { label: 'Área do triângulo', expression: 'A = (b · h)/2' },
+      { label: 'Área do paralelogramo', expression: 'A = b · h' }
+    ],
+    examples: [
+      {
+        title: 'Retângulo',
+        solution: 'Um retângulo com base 10 m e altura 4 m tem área 10 × 4 = 40 m².'
+      },
+      {
+        title: 'Triângulo',
+        solution: 'Um triângulo com base 12 cm e altura 5 cm tem área (12 × 5) / 2 = 30 cm².'
+      }
+    ],
+    tips: [
+      'Área sempre é em unidade ao quadrado.',
+      'Se a altura não for dada, procure uma relação no desenho ou no enunciado.',
+      'Em triângulo, a fórmula é metade do retângulo correspondente.'
+    ],
+    videoId: 'xy5Hh7J4J5M',
+    questions: [
+      {
+        ask: 'Qual é a área de um retângulo com 8 cm de base e 3 cm de altura?',
+        options: ['11 cm²', '24 cm²', '22 cm²', '18 cm²'],
+        correct: 1,
+        explanation: 'A área do retângulo é 8 × 3 = 24 cm².'
+      },
+      {
+        ask: 'A área de um triângulo de base 10 m e altura 6 m é:',
+        options: ['30 m²', '60 m²', '15 m²', '20 m²'],
+        correct: 0,
+        explanation: 'A = (10 × 6)/2 = 30 m².'
+      },
+      {
+        ask: 'Um quadrado de lado 5 cm tem área:',
+        options: ['10 cm²', '20 cm²', '25 cm²', '30 cm²'],
+        correct: 2,
+        explanation: 'A = l² = 5² = 25 cm².'
+      }
+    ]
+  },
+  {
+    id: 'triangulos',
+    category: 'Figuras clássicas',
+    title: 'Triângulos',
+    description: 'Entenda os tipos de triângulos, seus ângulos e a relação entre perímetro, área e propriedades especiais.',
+    objective: 'Classificar triângulos e usar suas propriedades para resolver problemas.',
+    sections: [
+      {
+        title: 'Classificação por lados',
+        content: 'Triângulos podem ser equiláteros (3 lados iguais), isósceles (2 lados iguais) e escalenos (3 lados diferentes).' 
+      },
+      {
+        title: 'Classificação por ângulos',
+        content: 'Também podem ser acutângulos (3 ângulos agudos), retângulos (1 ângulo reto) e obtusângulos (1 ângulo obtuso).' 
+      },
+      {
+        title: 'Propriedade importante',
+        content: 'Em qualquer triângulo, a soma dos ângulos internos é 180°. Em triângulo retângulo, vale o Teorema de Pitágoras: a² + b² = c².'
+      }
+    ],
+    formulas: [
+      { label: 'Teorema de Pitágoras', expression: 'a² + b² = c²' },
+      { label: 'Área do triângulo', expression: 'A = (b · h)/2' },
+      { label: 'Soma dos ângulos', expression: '180°' }
+    ],
+    examples: [
+      {
+        title: 'Triângulo retângulo',
+        solution: 'Se os catetos medem 3 e 4, a hipotenusa vale √(3² + 4²) = 5.'
+      },
+      {
+        title: 'Classificação',
+        solution: 'Um triângulo com lados 5, 5 e 7 é isósceles; se tivesse um ângulo de 90°, seria retângulo.'
+      }
+    ],
+    tips: [
+      'Em triângulo retângulo, a maior medida é a hipotenusa.',
+      'Se o problema menciona ângulo reto, pense em Pitágoras.',
+      'A área de um triângulo nunca depende do tipo de triângulo, somente da base e da altura.'
+    ],
+    videoId: 'hE2LJw0V7V0',
+    questions: [
+      {
+        ask: 'Qual triângulo tem todos os lados iguais?',
+        options: ['Escaleno', 'Isósceles', 'Equilátero', 'Retângulo'],
+        correct: 2,
+        explanation: 'Triângulo equilátero possui os três lados iguais.'
+      },
+      {
+        ask: 'Se um triângulo retângulo tem catetos 6 e 8, qual é a hipotenusa?',
+        options: ['10', '14', '12', '9'],
+        correct: 0,
+        explanation: 'Aplicando Pitágoras: 6² + 8² = 36 + 64 = 100; √100 = 10.'
+      },
+      {
+        ask: 'A soma dos ângulos internos de qualquer triângulo é:',
+        options: ['90°', '180°', '270°', '360°'],
+        correct: 1,
+        explanation: 'A soma dos ângulos internos de um triângulo é sempre 180°.'
+      }
+    ]
+  },
+  {
+    id: 'quadrilateros',
+    category: 'Figuras planas',
+    title: 'Quadriláteros',
+    description: 'Descubra as propriedades dos quadriláteros, suas diagonais e a relação entre lados, ângulos e área.',
+    objective: 'Classificar e calcular medidas em quadrados, retângulos, losangos, paralelogramos e trapézios.',
+    sections: [
+      {
+        title: 'Definição',
+        content: 'Quadriláteros são polígonos de quatro lados. A soma de seus ângulos internos é 360°.'
+      },
+      {
+        title: 'Tipos principais',
+        content: 'Retângulo, quadrado, paralelogramo, losango, trapézio e romboide são alguns dos tipos mais comuns de quadriláteros.'
+      },
+      {
+        title: 'Áreas',
+        content: 'A área do retângulo é base × altura; do paralelogramo é base × altura; do trapézio é (base maior + base menor) × altura / 2.'
+      }
+    ],
+    formulas: [
+      { label: 'Soma dos ângulos internos', expression: '360°' },
+      { label: 'Área do trapézio', expression: 'A = ((B + b)·h)/2' },
+      { label: 'Área do losango', expression: 'A = (D·d)/2' }
+    ],
+    examples: [
+      {
+        title: 'Trapézio',
+        solution: 'Um trapézio com bases 10 e 6 e altura 4 tem área ((10 + 6)×4)/2 = 32.'
+      },
+      {
+        title: 'Losango',
+        solution: 'Se as diagonais medem 8 e 6, a área é (8 × 6)/2 = 24.'
+      }
+    ],
+    tips: [
+      'Lembre-se que quadriláteros somam 360°.',
+      'Trapézio tem duas bases diferentes; o cálculo da área usa média das bases.',
+      'No losango, sempre use a metade do produto das diagonais.'
+    ],
+    videoId: '8J5vfA3yxw0',
+    questions: [
+      {
+        ask: 'A soma dos ângulos internos de um quadrilátero vale:',
+        options: ['180°', '270°', '360°', '450°'],
+        correct: 2,
+        explanation: 'A soma dos ângulos internos de qualquer quadrilátero é 360°.'
+      },
+      {
+        ask: 'Qual é a área de um trapézio com bases 10 e 6 e altura 4?',
+        options: ['16', '24', '32', '40'],
+        correct: 2,
+        explanation: 'A = ((10 + 6) × 4)/2 = 32.'
+      },
+      {
+        ask: 'Qual figura tem todos os lados iguais e ângulos retos?',
+        options: ['Losango', 'Retângulo', 'Quadrado', 'Trapézio'],
+        correct: 2,
+        explanation: 'O quadrado possui lados iguais e ângulos retos.'
+      }
+    ]
+  },
+  {
+    id: 'circunferencia',
+    category: 'Círculo',
+    title: 'Circunferência e círculo',
+    description: 'Aprofunde-se no estudo do círculo, raio, diâmetro, comprimento e área da superfície circular.',
+    objective: 'Interpretar medidas de círculo e aplicar fórmulas em problemas de comprimento e área.',
+    sections: [
+      {
+        title: 'Definições',
+        content: 'Circunferência é o contorno do círculo. Círculo é a região interna limitada pela circunferência.'
+      },
+      {
+        title: 'Raio e diâmetro',
+        content: 'Raio é a distância do centro até qualquer ponto da circunferência. Diâmetro é o dobro do raio e passa pelo centro.'
+      },
+      {
+        title: 'Fórmulas principais',
+        content: 'Comprimento da circunferência: C = 2πr. Área do círculo: A = πr².'
+      }
+    ],
+    formulas: [
+      { label: 'Comprimento da circunferência', expression: 'C = 2πr' },
+      { label: 'Área do círculo', expression: 'A = πr²' },
+      { label: 'Diâmetro', expression: 'd = 2r' }
+    ],
+    examples: [
+      {
+        title: 'Comprimento',
+        solution: 'Se r = 3 cm, C = 2π·3 = 6π cm.'
+      },
+      {
+        title: 'Área',
+        solution: 'Se r = 5 m, A = π·25 = 25π m².'
+      }
+    ],
+    tips: [
+      'Use π com valor aproximado 3,14 quando a questão pedir decimal.',
+      'Se o problema dá diâmetro, primeiro transforme em raio.',
+      'Círculo e circunferência são conceitos distintos: o contorno é uma coisa e a região interna é outra.'
+    ],
+    videoId: '8r8qT3s7x8o',
+    questions: [
+      {
+        ask: 'O diâmetro de uma circunferência é:',
+        options: ['Metade do raio', 'O dobro do raio', 'Igual ao perímetro', 'O triplo do raio'],
+        correct: 1,
+        explanation: 'Diâmetro é o segmento que passa pelo centro e mede o dobro do raio.'
+      },
+      {
+        ask: 'A área de um círculo de raio 4 cm é:',
+        options: ['8π cm²', '16π cm²', '4π cm²', '32π cm²'],
+        correct: 1,
+        explanation: 'A = πr² = π·4² = 16π cm².'
+      },
+      {
+        ask: 'Qual é a fórmula do comprimento da circunferência?',
+        options: ['C = πr²', 'C = 2πr', 'C = 2r', 'C = r²'],
+        correct: 1,
+        explanation: 'O comprimento da circunferência é dado por C = 2πr.'
+      }
+    ]
+  },
+  {
+    id: 'aplicacoes',
+    category: 'Aplicação',
+    title: 'Aplicações em provas e desafios',
+    description: 'Revise tudo em contexto real: metodologias para resolver alta dificuldade, interpretar enunciados e ganhar agilidade em provas.',
+    objective: 'Integrar os conceitos aprendidos em questões de OBMEP, Enem e vestibulares.',
+    sections: [
+      {
+        title: 'Estratégia para provas',
+        content: 'Leia a pergunta antes de olhar as alternativas, identifique a figura, escreva os dados e faça o desenho mental do problema.'
+      },
+      {
+        title: 'Erros comuns',
+        content: 'Muitas vezes, o aluno escolhe a fórmula errada por confundir área e perímetro. Outro erro frequente é esquecer a unidade e transformar medidas.'
+      },
+      {
+        title: 'Ferramenta de revisão',
+        content: 'Sempre que acertar algo, tente explicar em voz alta a lógica. Isso reforça a compreensão e ajuda a reconhecer padrões em problemas semelhantes.'
+      }
+    ],
+    formulas: [
+      { label: 'Checklist rápido', expression: 'Identifique figura → formule → calcule → confira unidades' },
+      { label: 'Perímetro', expression: 'soma dos lados' },
+      { label: 'Área', expression: 'superfície interna' }
+    ],
+    examples: [
+      {
+        title: 'Pergunta modelo',
+        solution: 'Se um terreno retangular mede 12 m por 8 m, seu perímetro é 40 m e sua área é 96 m². Perceba a diferença entre contorno e superfície.'
+      },
+      {
+        title: 'Dica final',
+        solution: 'Para problemas com várias figuras, calcule parte por parte e, depois, combine os resultados.'
+      }
+    ],
+    tips: [
+      'Entenda o enunciado antes de calcular.',
+      'Se a resposta parece absurda, revise a fórmula e a unidade.',
+      'Fazer desenho reduz erros de interpretação.'
+    ],
+    videoId: '7kI8JQdG2gs',
+    questions: [
+      {
+        ask: 'Uma praça retangular mede 20 m por 10 m. O perímetro dela é:',
+        options: ['30 m', '60 m', '100 m', '200 m'],
+        correct: 1,
+        explanation: 'P = 2(20 + 10) = 60 m.'
+      },
+      {
+        ask: 'Qual é a diferença entre perímetro e área?',
+        options: ['Perímetro mede superfície e área mede contorno', 'Perímetro mede contorno e área mede superfície', 'São a mesma coisa', 'Área mede lado e perímetro mede diagonal'],
+        correct: 1,
+        explanation: 'Perímetro é o contorno e área é a superfície interna.'
+      },
+      {
+        ask: 'Em provas, o primeiro passo antes de resolver um problema de geometria é:',
+        options: ['Somar tudo imediatamente', 'Ler o enunciado e identificar a figura', 'Multiplicar todas as medidas', 'Ignorar os dados'],
+        correct: 1,
+        explanation: 'A leitura cuidadosa do enunciado e a identificação da figura são essenciais para escolher a fórmula correta.'
+      }
+    ]
+  }
+];
